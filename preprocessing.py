@@ -95,7 +95,7 @@ def stopword_removal(df):
     return df
 
 def final(df):
-    list_columns = ["text", "Content_Parsed_6"]
+    list_columns = ["target", "text", "Content_Parsed_6"]
     df = df[list_columns]
 
     df = df.rename(columns={'Content_Parsed_6': 'text_parsed'})
